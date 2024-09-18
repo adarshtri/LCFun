@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 class GenerateParentheses22 {
 

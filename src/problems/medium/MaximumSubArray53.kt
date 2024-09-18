@@ -1,8 +1,8 @@
-package problems
+package problems.medium
 
-import kotlin.math.max
+import problems.Problem
 
-class MaximumSubArray55(override val problemLink: String) : Problem() {
+class MaximumSubArray53(override val problemLink: String) : Problem() {
 
     fun maxSubArray(nums: IntArray): Int {
 

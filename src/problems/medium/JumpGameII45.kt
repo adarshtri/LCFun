@@ -1,6 +1,6 @@
-package problems
+package problems.medium
 
-import kotlin.math.min
+import problems.Problem
 
 class JumpGameII45(override val problemLink: String) : Problem() {
 

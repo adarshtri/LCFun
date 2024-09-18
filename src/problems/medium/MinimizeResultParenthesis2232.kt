@@ -1,4 +1,6 @@
-package problems
+package problems.medium
+
+import problems.Problem
 
 /**
  * The solution below is a brute force strategy.

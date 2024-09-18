@@ -1,4 +1,6 @@
-package problems
+package problems.medium
+
+import problems.Problem
 
 class RevealCard950(override val problemLink: String) : Problem() {
 

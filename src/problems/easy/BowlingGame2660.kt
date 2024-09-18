@@ -1,4 +1,6 @@
-package problems
+package problems.easy
+
+import problems.Problem
 
 class BowlingGame2660(override val problemLink: String) : Problem() {
 

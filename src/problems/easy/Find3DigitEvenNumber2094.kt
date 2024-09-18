@@ -1,6 +1,8 @@
-package problems
+package problems.easy
 
-class Find3DigitEvenNumber2095(override val problemLink: String) : Problem() {
+import problems.Problem
+
+class Find3DigitEvenNumber2094(override val problemLink: String) : Problem() {
 
     private var numbers: MutableList<Int> = mutableListOf()
 

@@ -1,4 +1,6 @@
-package problems
+package problems.medium
+
+import problems.Problem
 
 class ArrayGameWinner1535(override val problemLink: String) : Problem() {
 

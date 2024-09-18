@@ -1,6 +1,6 @@
-package problems
+package problems.unsolved
 
-import kotlin.math.pow
+import problems.Problem
 
 class MinimumArrayEnd3133(override val problemLink: String) : Problem() {
 

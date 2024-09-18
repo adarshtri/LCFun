@@ -1,5 +1,6 @@
-package problems
+package problems.medium
 
+import problems.Problem
 import problems.types.ListNode
 
 

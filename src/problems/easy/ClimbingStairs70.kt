@@ -1,6 +1,8 @@
-package problems
+package problems.easy
 
-class ClimbingStairs(override val problemLink: String) : Problem() {
+import problems.Problem
+
+class ClimbingStairs70(override val problemLink: String) : Problem() {
 
     private var memo = mutableMapOf<Int, Int> ()
 

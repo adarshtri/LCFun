@@ -1,5 +1,6 @@
-package problems
+package problems.easy
 
+import problems.Problem
 import problems.types.TreeNode
 import kotlin.properties.Delegates
 

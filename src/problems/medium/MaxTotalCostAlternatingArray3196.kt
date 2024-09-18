@@ -1,4 +1,6 @@
-package problems
+package problems.medium
+
+import problems.Problem
 
 class MaxTotalCostAlternatingArray3196(override val problemLink: String) : Problem() {
 
