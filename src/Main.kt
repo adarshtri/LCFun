@@ -1,4 +1,5 @@
 import problems.*
+import problems.easy.MinimumOperationsToConvertTime2224
 
 val problemsMap = mapOf(
     DeleteNode3217::class.simpleName to DeleteNode3217("https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/"),
@@ -15,11 +16,12 @@ val problemsMap = mapOf(
     MaxTotalCostAlternatingArray3196::class.simpleName to MaxTotalCostAlternatingArray3196("https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/"),
     MysticDungeonMaximumEnergy3147::class.simpleName to MysticDungeonMaximumEnergy3147("https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/"),
     MinimumArrayEnd3133::class.simpleName to MinimumArrayEnd3133("https://leetcode.com/problems/minimum-array-end/"),
-    MinimizeResultParenthesis2232::class.simpleName to MinimizeResultParenthesis2232("https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/description/")
+    MinimizeResultParenthesis2232::class.simpleName to MinimizeResultParenthesis2232("https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/description/"),
+    MinimumOperationsToConvertTime2224::class.simpleName to MinimumOperationsToConvertTime2224("https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/")
 
 )
 
 fun main() {
-    val o = problemsMap[MinimizeResultParenthesis2232::class.simpleName]!! as MinimizeResultParenthesis2232
-    println(o.minimizeResult("247+38"))
+    val o = problemsMap[MinimumOperationsToConvertTime2224::class.simpleName]!! as MinimumOperationsToConvertTime2224
+    println(o.convertTime("02:30", "04:35"))
 }
