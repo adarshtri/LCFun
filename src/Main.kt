@@ -1,5 +1,7 @@
 import problems.easy.*
 import problems.medium.*
+import problems.types.TreeNode
+import problems.medium.CountNodesEqualAverageSubtree2265
 import problems.unsolved.MinimumArrayEnd3133
 
 val problemsMap = mapOf(
@@ -18,11 +20,44 @@ val problemsMap = mapOf(
     MysticDungeonMaximumEnergy3147::class.simpleName to MysticDungeonMaximumEnergy3147("https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/"),
     MinimumArrayEnd3133::class.simpleName to MinimumArrayEnd3133("https://leetcode.com/problems/minimum-array-end/"),
     MinimizeResultParenthesis2232::class.simpleName to MinimizeResultParenthesis2232("https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/description/"),
-    MinimumOperationsToConvertTime2224::class.simpleName to MinimumOperationsToConvertTime2224("https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/")
-
+    MinimumOperationsToConvertTime2224::class.simpleName to MinimumOperationsToConvertTime2224("https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/"),
+    CountNodesEqualAverageSubtree2265::class.simpleName to CountNodesEqualAverageSubtree2265("https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/")
 )
 
 fun main() {
-    val o = problemsMap[MinimumOperationsToConvertTime2224::class.simpleName]!! as MinimumOperationsToConvertTime2224
-    println(o.convertTime("02:30", "04:35"))
+
+    val head = TreeNode(
+        `val` = 4,
+    ).apply {
+        left = TreeNode(
+            `val` = 8
+        ).apply {
+            left = TreeNode(
+                `val` = 0
+            ).apply {
+                left = null
+                right = null
+            }
+            right = TreeNode(
+                `val` = 1
+            ).apply {
+                left = null
+                right = null
+            }
+        }
+        right = TreeNode(
+            `val` = 5
+        ).apply {
+            left = null
+            right = TreeNode(
+                `val` = 6
+            ).apply {
+                left = null
+                right = null
+            }
+        }
+    }
+
+    val o = problemsMap[CountNodesEqualAverageSubtree2265::class.simpleName]!! as CountNodesEqualAverageSubtree2265
+    println(o.averageOfSubtree(head))
 }
