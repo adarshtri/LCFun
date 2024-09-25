@@ -1,4 +1,5 @@
 import problems.easy.*
+import problems.hard.DiceRollSimulation1223
 import problems.medium.*
 import problems.types.TreeNode
 import problems.medium.CountNodesEqualAverageSubtree2265
@@ -21,43 +22,11 @@ val problemsMap = mapOf(
     MinimumArrayEnd3133::class.simpleName to MinimumArrayEnd3133("https://leetcode.com/problems/minimum-array-end/"),
     MinimizeResultParenthesis2232::class.simpleName to MinimizeResultParenthesis2232("https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/description/"),
     MinimumOperationsToConvertTime2224::class.simpleName to MinimumOperationsToConvertTime2224("https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/"),
-    CountNodesEqualAverageSubtree2265::class.simpleName to CountNodesEqualAverageSubtree2265("https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/")
+    CountNodesEqualAverageSubtree2265::class.simpleName to CountNodesEqualAverageSubtree2265("https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"),
+    DiceRollSimulation1223::class.simpleName to DiceRollSimulation1223("https://leetcode.com/problems/dice-roll-simulation/description/")
 )
 
 fun main() {
-
-    val head = TreeNode(
-        `val` = 4,
-    ).apply {
-        left = TreeNode(
-            `val` = 8
-        ).apply {
-            left = TreeNode(
-                `val` = 0
-            ).apply {
-                left = null
-                right = null
-            }
-            right = TreeNode(
-                `val` = 1
-            ).apply {
-                left = null
-                right = null
-            }
-        }
-        right = TreeNode(
-            `val` = 5
-        ).apply {
-            left = null
-            right = TreeNode(
-                `val` = 6
-            ).apply {
-                left = null
-                right = null
-            }
-        }
-    }
-
-    val o = problemsMap[CountNodesEqualAverageSubtree2265::class.simpleName]!! as CountNodesEqualAverageSubtree2265
-    println(o.averageOfSubtree(head))
+    val o = problemsMap[DiceRollSimulation1223::class.simpleName]!! as DiceRollSimulation1223
+    println(o.dieSimulator(30, listOf(2,3,1,2,1,2).toIntArray()))
 }
